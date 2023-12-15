@@ -1,0 +1,63 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+      globalcors:
+        corsConfigurations:
+          "[/**]":
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      routes:
+        - id: profile
+          uri: lb://PROFILE
+          predicates:
+            - Path=/api/profile/**
+          filters:
+            - AuthenticationFilter
+        - id: address
+          uri: lb://PROFILE
+          predicates:
+            - Path=/api/address/**
+          filters:
+            - AuthenticationFilter
+        - id: cart
+          uri: lb://CART/
+          predicates:
+            - Path=/api/cart/**
+          filters:
+            - AuthenticationFilter
+        - id: wishlist
+          uri: lb://WISHLIST/
+          predicates:
+            - Path=/api/wishlist/**
+          filters:
+            - AuthenticationFilter
+        - id: orders
+          uri: lb://ORDER-SERVICE/
+          predicates:
+            - Path=/api/order/**
+          filters:
+            - AuthenticationFilter
+        - id: product
+          uri: lb://PRODUCT/
+          predicates:
+            - Path=/api/products/**
+          filters:
+            - AuthenticationFilter
+        - id: review
+          uri: lb://PRODUCT-RATING-SERVICE/
+          predicates:
+            - Path=/api/productRating/**
+          filters:
+            - AuthenticationFilter
+        - id: authentication
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**

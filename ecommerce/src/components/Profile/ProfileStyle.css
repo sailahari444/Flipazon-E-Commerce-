@@ -1,0 +1,51 @@
+/* changePassword */
+.password-error {
+  color: red;
+  margin-top: 1%;
+}
+.changePassword-header {
+  background-color: rgb(78, 239, 239);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+
+.changePassword-box {
+  height: 100vh;
+  background-color: rgb(231, 230, 230);
+}
+
+/* Address */
+
+.addressCard:hover {
+  background-color: rgb(225, 244, 251);
+}
+
+.addAddressCard:hover {
+  background-color: rgb(225, 244, 251);
+}
+.addresscard-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-top: 1%;
+  font-weight: 500;
+}
+
+.addresscard-address-content {
+  display: flex;
+  flex-direction: row;
+}
+.editaddress-card:hover {
+  background-color: rgb(225, 244, 251);
+}
+/* MyProfile */
+.myprofile-box {
+  background-color: lightgray;
+}
+.myprofile-card:hover {
+  background-color: rgb(252, 255, 255);
+}

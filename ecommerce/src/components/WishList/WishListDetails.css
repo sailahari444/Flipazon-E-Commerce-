@@ -1,0 +1,23 @@
+
+.wishlistdetaildiv1{
+    padding: 10px;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+
+}
+
+.wishlistdetaildiv1 .div2{
+    /* background-color: black; */
+}
+
+.wishlistdetaildiv1 .div2 .div3{
+    /* background-color: rgb(230, 213, 247); */
+    padding: 20px;
+    margin-left: 0.2rem;
+
+}
+
+.wishlistdetaildiv1 .div2 .div3 >a{
+    
+    color: rgb(163, 108, 56);
+}

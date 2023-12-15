@@ -1,0 +1,57 @@
+CREATE DATABASE  IF NOT EXISTS `ecommerce` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `ecommerce`;
+-- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
+--
+-- Host: localhost    Database: ecommerce
+-- ------------------------------------------------------
+-- Server version	8.0.31
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `rating`
+--
+
+DROP TABLE IF EXISTS `rating`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `rating` (
+  `product_id` varchar(255) NOT NULL,
+  `user_id` varchar(255) NOT NULL,
+  `created_at` datetime(6) DEFAULT NULL,
+  `rating` float NOT NULL,
+  `review` text,
+  `user_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`product_id`,`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rating`
+--
+
+LOCK TABLES `rating` WRITE;
+/*!40000 ALTER TABLE `rating` DISABLE KEYS */;
+INSERT INTO `rating` VALUES ('0a421a09-88d2-105a-8188-d21135c30000','c0a80962-88d2-1df7-8188-d28131fb0000','2023-07-06 08:34:49.373000',3,'saw','test Name'),('c0a80070-892a-194a-8189-2a1dab340000','c0a80962-88d2-1df7-8188-d28131fb0000','2023-07-06 15:49:57.762000',3,'Nice','test Name'),('c0a80070-892a-194a-8189-2a1dab5a0001','c0a80070-8929-1a2c-8189-2bd07ae30009','2023-07-06 22:13:15.503000',3,'Nicee','Lahari Sai'),('c0a80962-892e-1ddc-8189-2ebf5f180000','c0a80070-8929-1a2c-8189-2c4d3922000b','2023-07-07 12:33:10.040000',3,'Did','Lahari Sai'),('c0a80962-892e-1ddc-8189-2ebf5f180000','c0a80962-892e-1b8c-8189-2ececcf50001','2023-07-07 13:49:03.438000',4,'Nice Product','Siva Sai'),('c0a80962-892e-1ddc-8189-2ebf5f180000','c0a80962-892e-1b8c-8189-2fef5d320006','2023-07-07 16:48:58.055000',4.2,'Nice one','Test Name'),('c0a80962-892e-1ddc-8189-2ebf5f320002','c0a80070-8929-1a2c-8189-2c4d3922000b','2023-07-07 15:50:30.722000',4,'Nice product','Lahari Sai');
+/*!40000 ALTER TABLE `rating` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-07-11 17:04:38

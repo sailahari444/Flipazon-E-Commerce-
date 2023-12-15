@@ -1,0 +1,7 @@
+/.metadata
+/.idea
+/.vscode*
+!*.java
+!*.properties
+!*.yml
+!*.xml

@@ -1,0 +1,21 @@
+/* .logos {
+  transition: 0.4s;
+  transform: translateY(5px);
+} */
+
+.logos:hover {
+  transition: 0.4s;
+  transform: scale(1.7, 1.7);
+}
+.facebook:hover {
+  color: #3b5998;
+}
+.instagram:hover {
+  color: #c13584;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.youtube:hover {
+  color: red;
+}

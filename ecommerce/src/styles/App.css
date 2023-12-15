@@ -1,0 +1,14 @@
+.App {
+  text-align: left;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}

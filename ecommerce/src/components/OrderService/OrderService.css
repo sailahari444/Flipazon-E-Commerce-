@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+.orderCardHome {
+    padding-top: 6%;
+    padding-left:15%;
+    background-color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.orderCardHome>h1{
+    color: rgb(255, 98, 98);
+
+}
+.orderCardHome .avatar{
+    width: 40px;
+    height: 25px;
+    padding: 0%;
+}
+
+.orderCardHome .avatar:hover{
+    color: rgb(22, 15, 15);
+}
+
+
+.orderCardHome .orderCard {
+    width: 75%;
+    margin-top: 5rem;
+    border-radius: 5px;
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    transition: 1s box-shadow;
+}
+
+
+.orderCardHome .orderCard #orderSpan {
+    display: flex;
+    flex-direction: row;
+}
+
+.orderCardHome .orderCard #orderSpan > ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.orderCardHome .orderCard #orderSpan > ul > li {
+    float: left;
+    padding-right: 5%;
+    margin-top: 1rem;
+}
+
+.orderCardHome .orderCard #orderSpan > ul > li>h2{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 100;
+    padding: 2px;
+}
+
+.orderCardHome .orderCard #orderSpan > ul > li>h2 .avatarItems{
+    width: 20px;
+    height: 15px;
+    padding: 0%;
+
+}
+
+.orderCardHome .orderCard .div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.orderCardHome .orderCard .div1 :link{
+ padding-right: 5%;
+    padding-top: 1%;
+    margin-bottom: 1rem;
+}
+
+.orderCardHome .orderCard .div1 :link:hover{
+    color: red;
+   }
+
+.orderCardHome .orderCard .div1 > h2 {
+    color: rgb(53, 213, 96);
+    padding-left: 5%;
+    padding-top: 1%;
+    margin-bottom: 1rem;
+}
+.orderItems {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 10px auto;
+    width: 650px;
+    height: 250px;
+    background: white;
+    border-radius: 55px;
+    transition: 1s box-shadow;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.orderItems:hover {
+    box-shadow: 0 5px 35px 0px rgba(7, 6, 6, 0.635); 
+  }
+
+  .orderItems .image{
+    width: 30%;
+    padding: 2rem;
+
+  }
+
+  .orderItems .image >img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .orderItems .productItems{
+    width: 70%;
+    padding: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .orderItems .productItems > h2{
+    font-size: large;
+    padding: 2px;
+  }
+
+  .orderItems .productItems > p{
+
+    padding: 2px;
+    overflow: scroll;
+    letter-spacing: 0.5px;
+    font-size: small;
+    font-weight: 200;
+    height: 90px;
+
+}
+
+  .orderItems .productItems > p::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .orderItems .productItems > h5{
+    padding: 1px;
+  }
+
+  .orderItems .productItems >span{
+    display: flex;
+    flex-direction: row;
+    padding: 5rems;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    margin-top: 2px;
+  }
+
+
+  .orderItems .productItems > span > button{
+    display: flex;
+    background-color:rgb(183, 249, 218) ;
+    color: black;
+    text-decoration: none;
+    align-self: center;
+    padding: 0.3rem;
+    margin-top: 1px;
+    
+  }
+
+  .orderItems .productItems > span > button:hover{
+    background-color: rgb(109, 255, 104);
+  }
+
+  .orderItems .productItems > span > button :link{
+    text-decoration: none;
+    color: black;
+  }
+
+  /* .orderItems .productItems >span .addrating{
+    background-color: aqua;
+  } */
+
+  
+
+  
+

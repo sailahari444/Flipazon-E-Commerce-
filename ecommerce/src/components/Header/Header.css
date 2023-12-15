@@ -1,0 +1,25 @@
+
+a{
+    text-decoration: none;
+}
+
+  .nav-bag {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+.bag-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 56%;
+    background: black;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    margin-right: 20px;
+  }
+
